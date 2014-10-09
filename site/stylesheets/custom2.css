@@ -26,8 +26,8 @@ body {
 */
 
 .container {
-  max-width: 900px;
-
+  /*max-width: 900px;*/
+  max-width: 95%;
   margin-left: auto;
   margin-right: auto;
   background-color: #97C354;
@@ -45,7 +45,9 @@ header {
 }
  	
 .page_heading {
-    margin-left: 20px;
+    padding: 10px;
+    float:left;
+    margin-left: 10px;
 } 
 	
 .contact_information {
@@ -58,26 +60,36 @@ header {
   float: right;
 }
 
+#logo {
+  margin-top: 20px;
+  float: right;
+  min-width:70%;
+
+  
+}
+
 /****************************************
 Navigation
 *****************************************/
 nav {
-float:left;
-display: inline-block;
-max-width: 30%;
-background-color: orange;
-
+  clear:both;
+  float:left;
+  margin: 20px;
+  max-width: 30%;
+  height:200px;
+  background-color: orange;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
 
 nav ul {
-  background-color: red;
   margin-left: -10%;
 }
 
 nav li {
   list-style: none;
   padding:5px;
-  background-color: green;
 }
 
 /****************************************
@@ -85,16 +97,13 @@ Articles
 *****************************************/
 
 .articles {
-width:70%;
-float:left;
-display: inline-block;
-
-background-color: purple;
+  margin-left: 20px;
+  width:70%;
+  float:left;
 }
 
 article {
   margin: 20px;
-  background-color: navy;
 }
 
 .article_heading {
