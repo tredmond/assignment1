@@ -74,10 +74,10 @@ Navigation
 nav {
   clear:both;
   float:left;
-  margin: 20px;
-  max-width: 30%;
-  height:200px;
-  background-color: orange;
+  margin: 25px 50px 0 50px;
+  max-width: 25%;
+  height:250px;
+  background-color: #53B0D7;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -89,8 +89,23 @@ nav ul {
 
 nav li {
   list-style: none;
-  padding:5px;
+  padding:10px 0 0 10px;
 }
+nav a {
+   text-decoration: none;
+} 
+
+nav a:visited {
+  color: black;
+}
+
+nav img {
+  max-width: 50%;
+  max-height: 50%;
+  margin-left: 35px;
+
+}
+
 
 /****************************************
 Articles
@@ -106,14 +121,17 @@ article {
   margin: 20px;
 }
 
+.articlehead {
+  margin-left: 20px;
+  padding-bottom: 20px;
+  font-size: 1.75em;
+}
 .article_heading {
   width: 80%;
   margin-left: 20px;
   padding: 10px;
   border: 1px solid black;
   background-color: #53B0D7;
- 
-
 }
 
 .article_content {
@@ -122,8 +140,6 @@ article {
   padding: 10px;
   border: 1px solid gray;
   background-color: #F0E9E2;
-
-
 }
 
 .prompt_text {
@@ -131,23 +147,51 @@ article {
   padding-left: 10px;
   color: #000;
 }
+
+/****************************************
+Form
+*****************************************/
+.form_container {
+  max-width: 70%;
+  background-color: #53B0D7;
+  border-radius: 10px;
+  margin: 20px;
+}
+form {
+  color: #00f;
+
+}
 .form_field_table {
   margin-left: 30px;
   border: none;
-}
-.form_field_table td {color: #00f;}
 
-form {
+}
+.form_field_table td {
   color: #00f;
+}
+
+
 }
 .buttons {
   float: right;
+}
+
+.tblabel {
+  width: 29%;
+  text-align: right;
+}
+
+.tblbox {
+  width: 71%;
 }
 
 .float_right {
   float: right;
 }
 
+/****************************************
+Footer
+*****************************************/
 /* finally, the footer stretches across the whole page width in an open, centered sort of way. */
 footer {
   clear: both;

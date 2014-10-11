@@ -67,23 +67,56 @@
         </nav>
           		
         <section class='articles'>
-          	<article>
-              <h1 class='articlehead'>Keeping in Touch</h1>
-            	<div class="article_heading">
-            	 <h1>Value Proposition Statement</h1>
-            	</div>
-            	<div class="article_content">
-                <p>This is an article paragraph and other stuff.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh, in interdum tellus ultrices id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse urna lorem, imperdiet a mattis sed, blandit id elit. Proin id ultrices odio. Vivamus ut nisl nulla. Proin consectetur urna vitae est fermentum in placerat elit condimentum. Morbi iaculis elit sit amet lacus convallis a semper risus elementum.</p>
-            	</div>		
-          	</article>
-
             <article>
-              <div class="article_heading">
-               <h1>Current Promotion Title</h1> 
-              </div>
+              <h1 class='articlehead'>Make an Appointment</h1>
               <div class="article_content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh, in interdum tellus ultrices id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse urna lorem, imperdiet a mattis sed, blandit id elit. Proin id ultrices odio. Vivamus ut nisl nulla. Proin consectetur urna vitae est fermentum in placerat elit condimentum. Morbi iaculis elit sit amet lacus convallis a semper risus elementum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+              <div class='form_container'>
+                <p><a href="#theForm" id="formLink">Show the form</a></p>
+                <a id="theForm"></a> 
+               
+                <form id="responseForm" method="post" action="http:form-echo.herokuapp.com/form-echo">
+                  <table class="form_field_table">
+                    <tr>
+                      <td class='tblabel'>Your email:</td>
+                      <td class='tblbox' >
+                        <input type="text"  name="recipient" value="me@example.com" size="56" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class='tblabel'>Your name: </td>
+                       <td class='tblbox' >
+                        <input type="text" name="customer_name" size="56" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class='tblabel'>Your phone:</td>
+                       <td class='tblbox' >
+                        <input type="text" name="customer_phone" size="56"/>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class='tblabel'>Message:</td>
+                       <td class='tblbox' >
+                        <textarea name="customer_message" rows="7" cols="40"> </textarea>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class='tblabel'>&nbsp</td>
+                       <td class='tblbox' >
+                        <div class="buttons">
+                          <a href="#">Never mind</a>  <input name="submit" type="submit" value="Send us feedback" />
+                        </div> 
+                      </td>           
+                    </tr>
+                  </table>                 
+                </form>
               </div>    
             </article>
         </section>
